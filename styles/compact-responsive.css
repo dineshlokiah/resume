@@ -1,0 +1,353 @@
+/* ===================================
+   Compact Resume - Responsive Design
+   =================================== */
+
+/* ===================================
+   Tablet Styles (768px - 1024px)
+   =================================== */
+@media screen and (max-width: 1024px) {
+  .resume-container {
+    margin: 0;
+    box-shadow: none;
+  }
+  
+  .sidebar {
+    width: 260px;
+    padding: var(--spacing-lg);
+  }
+  
+  .main-content {
+    padding: var(--spacing-lg) var(--spacing-xl);
+  }
+  
+  .profile-image,
+  .profile-placeholder {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .name {
+    font-size: var(--font-size-lg);
+  }
+  
+  .skill-tags {
+    gap: var(--spacing-xs);
+  }
+  
+  .skill-tag {
+    font-size: var(--font-size-xs);
+    padding: 2px var(--spacing-xs);
+  }
+}
+
+/* ===================================
+   Mobile Styles (< 768px)
+   =================================== */
+@media screen and (max-width: 767px) {
+  /* Action Buttons - Mobile */
+  .action-buttons {
+    top: 8px;
+    right: 8px;
+    gap: 6px;
+  }
+  
+  .action-btn {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+  
+  .btn-icon {
+    font-size: 12px;
+  }
+  
+  .btn-text {
+    font-size: 9px;
+  }
+  
+  .resume-container {
+    flex-direction: column;
+    margin: 0;
+    box-shadow: none;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: var(--spacing-lg);
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .main-content {
+    padding: var(--spacing-lg);
+  }
+  
+  /* Profile Section - Horizontal Layout on Mobile */
+  .profile-section {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+  }
+  
+  .profile-image,
+  .profile-placeholder {
+    width: 80px;
+    height: 80px;
+    margin-right: var(--spacing-lg);
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .name {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .title {
+    font-size: var(--font-size-xs);
+  }
+  
+  /* Contact Section - Grid Layout */
+  .contact-section {
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .contact-item {
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-xs);
+  }
+  
+  .contact-icon {
+    width: 16px;
+    margin-right: var(--spacing-sm);
+  }
+  
+  /* Skills Section - Compact */
+  .skills-section {
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .skill-group {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .skill-category {
+    font-size: var(--font-size-xs);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .skill-tags {
+    gap: 2px;
+  }
+  
+  .skill-tag {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .main-section-title {
+    font-size: var(--font-size-md);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  /* Job Entries */
+  .job {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+  }
+  
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .job-title {
+    font-size: var(--font-size-sm);
+  }
+  
+  .job-duration {
+    font-size: var(--font-size-xs);
+    align-self: flex-start;
+  }
+  
+  .job-company {
+    font-size: var(--font-size-xs);
+  }
+  
+  .job-department {
+    font-size: 10px;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .job-achievements li {
+    font-size: var(--font-size-xs);
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+  }
+  
+  /* Education */
+  .education-item {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+  }
+  
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .degree-title {
+    font-size: var(--font-size-sm);
+  }
+  
+  .education-duration {
+    font-size: var(--font-size-xs);
+    align-self: flex-start;
+  }
+  
+  .institution {
+    font-size: var(--font-size-xs);
+  }
+  
+  /* Summary */
+  .summary-text {
+    font-size: var(--font-size-sm);
+    text-align: left;
+  }
+  
+  /* Certifications */
+  .certification-item {
+    font-size: var(--font-size-xs);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .cert-icon {
+    width: 16px;
+    margin-right: var(--spacing-sm);
+  }
+}
+
+/* ===================================
+   Small Mobile Styles (< 480px)
+   =================================== */
+@media screen and (max-width: 479px) {
+  .sidebar,
+  .main-content {
+    padding: var(--spacing-md);
+  }
+  
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .profile-image,
+  .profile-placeholder {
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .name {
+    font-size: var(--font-size-md);
+  }
+  
+  .skill-tag {
+    font-size: 9px;
+    padding: 1px 3px;
+  }
+  
+  .job-achievements li {
+    font-size: 11px;
+  }
+}
+
+/* ===================================
+   Landscape Orientation (Mobile)
+   =================================== */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .resume-container {
+    flex-direction: row;
+  }
+  
+  .sidebar {
+    width: 240px;
+    border-right: 1px solid var(--color-border);
+    border-bottom: none;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-image,
+  .profile-placeholder {
+    width: 60px;
+    height: 60px;
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .main-content {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+/* ===================================
+   Print Styles Override
+   =================================== */
+@media print {
+  .resume-container {
+    flex-direction: row;
+    box-shadow: none;
+    margin: 0;
+    max-width: 100%;
+  }
+  
+  .sidebar {
+    width: 200px;
+    padding: 0.5rem;
+    border-right: 1px solid #000;
+  }
+  
+  .main-content {
+    padding: 0.5rem 1rem;
+  }
+  
+  .profile-image,
+  .profile-placeholder {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .name {
+    font-size: 14pt;
+  }
+  
+  .section-title,
+  .main-section-title {
+    font-size: 11pt;
+  }
+  
+  .skill-tag {
+    font-size: 7pt;
+    padding: 1px 2px;
+  }
+}
